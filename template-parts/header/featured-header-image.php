@@ -63,7 +63,7 @@ else :  // Right sidebar option is in use.
 
 	if ( 1 === get_theme_mod( 'paddle_enable_author_bio', 1 ) ) {
 		printf(
-			'<div class="by-author"> %1$s<span class="author vcard"><a class="url" href="%2$s"> %3$s</a></span></div>',
+			'<div class="by-author">%1$s <span class="author vcard"><a class="url" href="%2$s">%3$s</a></span></div>',
 			esc_html_x( 'By', 'post author', 'paddle' ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_html( get_the_author() )
