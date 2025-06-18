@@ -1,0 +1,115 @@
+/*!
+Theme Name: Paddle
+Author: Abidemi Kusimo
+Theme URI: https://github.com/kusimo/paddle
+Description: <code>Paddle</code> is a theme built with <code>Bootstrap5</code> and underscores framework. You can easily customize the theme to fit your purpose. The theme comes with <code>Modal Search</code> <code>Off Canvass menu slider</code>, and <code>colour settings</code> to help match your brand with your site. Also, includes <code>post layout</code>; you can choose to have two column layout and <code>sidebar</code> on the right or one column layout (Full width). <code>Call to Action (CTA)</code> button on the menu bar. The theme option provides features that will drive your site to the next level. For the developers, you can find all the files needed at the theme URI.
+Version: 1.3.0
+Tested up to: 6.8
+Requires PHP: 8.2
+License: GNU General Public License v2 or later 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: paddle
+Tags: Custom-Background, Custom-Logo, Custom-Menu, Featured-Images, Threaded-Comments, Translation-Ready, Rtl-Language-Support, Blog, One-Column, Two-Columns, Right-Sidebar, Custom-Colors, Custom-Header, Footer-Widgets, Theme-Options
+
+This theme, like WordPress, is licensed under the GPL.
+
+Paddle is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Paddle WordPress Theme, Copyright 2021 Abidemi Kusimo.
+Paddle is distributed under the terms of the GNU GPL.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+
+Resource Licenses:
+Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT, documentation under CC BY 3.0.),
+
+Paddle Wordpress Theme, Copyright 2021 Abidemi Kusimo
+Paddle is distributed under the terms of the GNU GPL
+
+Image for theme screenshot, Copyright Abidemi S. Kusimo
+License:  GNU General Public License.
+License URL: https://github.com/kusimo/paddle/blob/main/LICENSE
+Source: https://github.com/kusimo/paddle/blob/ed71f0ed6a1b91e9afb620739e743222e34986ac/src/free-image/gold-price.jpg
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+
+// Import variables and mixins.
+*/
+@import 'abstracts/abstracts';
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import 'generic/normalize';
+
+/* Box sizing
+--------------------------------------------- */
+@import 'generic/box-sizing';
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import 'base/base';
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import 'components/components';
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+@import 'plugins/jetpack/infinite-scroll';
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+@import 'utilities/accessibility';
+
+/* Alignments
+--------------------------------------------- */
+@import 'utilities/alignments';
