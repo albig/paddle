@@ -535,8 +535,9 @@ body.logo-center {
       &:hover>a,
       &.current-menu-item>a,
       &.current-menu-ancestor>a {
-        color: $color__primary;
+        color: white;
       }
+
     }
 
     li:hover ul.sub-menu,

@@ -20,7 +20,7 @@ if ( ! function_exists( 'paddle_theme_scripts' ) ) :
 		wp_style_add_data( 'bootstrap-css', 'rtl', 'replace' );
 
 
-		wp_enqueue_style( 'paddle-theme-style', get_template_directory_uri() . '/css/theme.min.css', array(), PADDLE_DEV_VERSION );
+		wp_enqueue_style( 'paddle-theme-style', get_template_directory_uri() . '/style.css', array(), PADDLE_DEV_VERSION );
 		wp_style_add_data( 'paddle-theme-style', 'rtl', 'replace' );
 
 		wp_enqueue_script( 'paddle-script', get_template_directory_uri() . '/js/theme.min.js', array(), filemtime( get_template_directory( __FILE__ ) . '/js/theme.min.js' ), true );

@@ -2,35 +2,35 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Paddle 1.0.15\n"
+"Project-Id-Version: Paddle 1.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/paddle\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-06-18T20:52:47+02:00\n"
+"POT-Creation-Date: 2025-06-18T22:58:18+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: paddle\n"
 
 #. Theme Name of the theme
-#: css
+#: style.css
 msgid "Paddle"
 msgstr ""
 
 #. Theme URI of the theme
-#: css
+#: style.css
 msgid "https://github.com/kusimo/paddle"
 msgstr ""
 
 #. Description of the theme
-#: css
+#: style.css
 msgid "<code>Paddle</code> is a theme built with <code>Bootstrap5</code> and underscores framework. You can easily customize the theme to fit your purpose. The theme comes with <code>Modal Search</code> <code>Off Canvass menu slider</code>, and <code>colour settings</code> to help match your brand with your site. Also, includes <code>post layout</code>; you can choose to have two column layout and <code>sidebar</code> on the right or one column layout (Full width). <code>Call to Action (CTA)</code> button on the menu bar. The theme option provides features that will drive your site to the next level. For the developers, you can find all the files needed at the theme URI."
 msgstr ""
 
 #. Author of the theme
-#: css
+#: style.css
 msgid "Abidemi Kusimo"
 msgstr ""
 
@@ -910,6 +910,7 @@ msgstr ""
 
 #. translators: %s: Name of current post
 #: inc/template-tags.php:247
+#: template-parts/header/site-slider.php:79
 msgid "Continue reading"
 msgstr ""
 
@@ -1030,4 +1031,59 @@ msgstr ""
 #: template-parts/header/style-1.php:28
 #: template-parts/header/style-2.php:41
 msgid "Open Menu"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Himmel"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Tanne"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Klee"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Klee-700"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Grashalm"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sonne"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sand"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Gray"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
 msgstr ""

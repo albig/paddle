@@ -6,8 +6,7 @@ optgroup,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 1.1875rem;
 	line-height: $font__line-height-body;
 }
 
@@ -24,7 +23,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.6em;
+	margin-bottom: 1.2em;
 }
 
 b,
@@ -42,16 +41,11 @@ i {
 blockquote {
 	border-left: 4px solid $color__primary;
 	border-color: $color__primary;
-	font-size: 18px;
-	font-size: 1.8rem;
+	font-size: 110%;
 	font-style: italic;
 	line-height: 1.6667;
-	margin-bottom: 1.6667em;
-	padding-left: 0.7778em;
-}
-
-blockquote p {
-	margin-bottom: 1.6667em;
+	padding: 0 1em;
+	margin-bottom: 1.2em;
 }
 
 blockquote > p:last-child {

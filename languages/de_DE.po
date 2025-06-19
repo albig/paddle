@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Paddle 1.0.15\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/paddle\n"
-"POT-Creation-Date: 2025-06-18T20:52:47+02:00\n"
-"PO-Revision-Date: 2025-06-18 21:20+0200\n"
+"POT-Creation-Date: 2025-06-18T22:58:18+02:00\n"
+"PO-Revision-Date: 2025-06-18 23:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -17,17 +17,17 @@ msgstr ""
 "X-Domain: paddle\n"
 
 #. Theme Name of the theme
-#: css
+#: style.css
 msgid "Paddle"
 msgstr ""
 
 #. Theme URI of the theme
-#: css
+#: style.css
 msgid "https://github.com/kusimo/paddle"
 msgstr ""
 
 #. Description of the theme
-#: css
+#: style.css
 msgid ""
 "<code>Paddle</code> is a theme built with <code>Bootstrap5</code> and "
 "underscores framework. You can easily customize the theme to fit your "
@@ -42,7 +42,7 @@ msgid ""
 msgstr ""
 
 #. Author of the theme
-#: css
+#: style.css
 msgid "Abidemi Kusimo"
 msgstr ""
 
@@ -919,7 +919,7 @@ msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Bearbeiten <span class=\"screen-reader-text\">%s</span>"
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:247
+#: inc/template-tags.php:247 template-parts/header/site-slider.php:79
 msgid "Continue reading"
 msgstr "Weiterlesen"
 
@@ -1018,7 +1018,7 @@ msgstr ""
 #: template-parts/content.php:63
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "Weiterlesen<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #. translators: %s: Author name.
 #: template-parts/header/featured-header-image.php:41
@@ -1042,3 +1042,63 @@ msgstr ""
 #: template-parts/header/style-1.php:28 template-parts/header/style-2.php:41
 msgid "Open Menu"
 msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Himmel"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Tanne"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Klee"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Klee-700"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Grashalm"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sonne"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sand"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Gray"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Continue reading"
+#~ msgid "Continue Reading"
+#~ msgstr "Weiterlesen"

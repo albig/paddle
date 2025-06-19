@@ -135,8 +135,10 @@ if ( ! function_exists( 'paddle_static_header_css' ) ) {
 		.widget_rss .widget-title a:hover,
 		.widget_rss .widget-title a:focus, 
 		.submenu-toggle:hover, 
+		.xxxab,
 		.submenu-toggle:focus{
-			color: '.$primary_color.';
+			color: '.$paddle_navlink_text_color_check.';
+			font-weight: 700;
 		}';
 		 
 		// buttons

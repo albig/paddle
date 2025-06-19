@@ -14,7 +14,7 @@ if ( ! defined( 'PADDLE_VERSION' ) ) {
 }
 
 if ( ! defined( 'PADDLE_DEV_VERSION' ) ) {
-	$paddle_version = paddle_theme_version() . '.' . filemtime( get_template_directory() . '/css/theme.css' );
+	$paddle_version = paddle_theme_version() . '.' . filemtime( get_template_directory() . '/style.css' );
 	define( 'PADDLE_DEV_VERSION', $paddle_version );
 }
 

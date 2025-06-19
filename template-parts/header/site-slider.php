@@ -76,7 +76,7 @@
 							} else {
 								?>
 								<a href="<?php echo ( esc_url_raw( $paddle_post_url ) ); ?>" class="btn btn-primary border-0">
-									<?php echo esc_html( 'Continue Reading' ); ?>
+									<?php echo __( 'Continue reading', 'paddle' ); ?>
 								</a>
 							<?php } ?>
 

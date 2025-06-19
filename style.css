@@ -63,6 +63,30 @@ Source: https://github.com/kusimo/paddle/blob/ed71f0ed6a1b91e9afb620739e743222e3
 
 // Import variables and mixins.
 */
+/* inter-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/inter-v19-latin_latin-ext-regular.woff2") format("woff2");
+}
+/* inter-italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  src: url("assets/fonts/inter-v19-latin_latin-ext-italic.woff2") format("woff2");
+}
+/* inter-700 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/inter-v19-latin_latin-ext-700.woff2") format("woff2");
+}
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -405,9 +429,8 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1875rem;
   line-height: 1.5;
 }
 
@@ -422,7 +445,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 1.6em;
+  margin-bottom: 1.2em;
 }
 
 b,
@@ -440,16 +463,11 @@ i {
 blockquote {
   border-left: 4px solid #000000;
   border-color: #000000;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 110%;
   font-style: italic;
   line-height: 1.6667;
-  margin-bottom: 1.6667em;
-  padding-left: 0.7778em;
-}
-
-blockquote p {
-  margin-bottom: 1.6667em;
+  padding: 0 1em;
+  margin-bottom: 1.2em;
 }
 
 blockquote > p:last-child {
@@ -461,7 +479,7 @@ blockquote small {
   color: #333;
   font-size: 15px;
   font-size: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
 }
 
@@ -682,7 +700,7 @@ h2, .entry-content h2,
   .comment-content h2,
   .textwidget h2, .page-content h2 {
     line-height: 1.25;
-    margin: 2em 0;
+    margin: 1em 0;
   }
 }
 
@@ -806,10 +824,6 @@ body.boxed-header header > h1:before {
 
 header .term-description {
   display: inline-block;
-}
-
-p {
-  margin-bottom: 1.5em;
 }
 
 dfn,
@@ -939,7 +953,7 @@ ol {
 @media (min-width: 992px) {
   ul,
   ol {
-    margin: 0 0 1.5em 3em;
+    margin: 0 0 1.5em 1em;
   }
 }
 
@@ -2700,9 +2714,32 @@ section[id*=recent-comments-] ul li :hover:after :after {
 --------------------------------------------- */
 .widget-area .widget {
   margin: 0 0 5.5em;
+  /* nicer select box */
 }
 .widget-area .widget select {
   max-width: 100%;
+}
+.widget-area .widget select[name=archive-dropdown] {
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 0.8em;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
 }
 .widget-area .widget ul {
   list-style: none;
@@ -2775,7 +2812,7 @@ section[id*=recent-posts-] li:before {
   margin-right: 10px;
   background-color: #000000;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 /* Media
@@ -3400,7 +3437,7 @@ body.logo-center .site-branding .has-woocommerce .woo-header-utilities {
   color: #000000;
 }
 [data-header-style="1"] ul > li:hover > a, [data-header-style="1"] ul > li.current-menu-item > a, [data-header-style="1"] ul > li.current-menu-ancestor > a {
-  color: #000000;
+  color: white;
 }
 [data-header-style="1"] ul li:hover ul.sub-menu,
 [data-header-style="1"] ul li:hover ul.children {
