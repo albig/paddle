@@ -61,9 +61,9 @@ else :  // Right sidebar option is in use.
 
 	the_title( '<h1 class="entry-title">', '</h1>' );
 
-	if ( 1 === get_theme_mod( 'paddle_enable_author_bio', 1 ) ) {
+	if ( 1 === get_theme_mod( 'paddle_enable_author_bio', PADDLE_DEFAULT_OPTION['paddle_enable_author_bio'] ) ) {
 		printf(
-			'<div class="by-author">%1$s <span class="author vcard"><a class="url" href="%2$s">%3$s</a></span></div>',
+			'<div class="by-author"> %1$s<span class="author vcard"><a class="url" href="%2$s"> %3$s</a></span></div>',
 			esc_html_x( 'By', 'post author', 'paddle' ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_html( get_the_author() )
@@ -72,10 +72,11 @@ else :  // Right sidebar option is in use.
 
 	?>
 
-	<figure class="thumbnail-post-single position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+	<figure class="thumbnail-post-single position-relative overflow-hidden">
 
 		<?php
-		paddle_post_thumbnail();
+		$paddle_post_thumbnail_size =get_theme_mod( 'paddle_thumbnail_size', PADDLE_DEFAULT_OPTION['paddle_thumbnail_size'] );  
+		paddle_post_thumbnail($paddle_post_thumbnail_size);
 
 		$paddle_caption = get_the_post_thumbnail_caption();
 

@@ -14,7 +14,10 @@ foreach ( $paddle_social_urls as $key => $value ) {
 	   <li class="social-item">
 			<span class="social-icon-wrap social-link solid-dark-bordered <?php echo esc_attr( $social_name ); ?>-social">
 				<a rel="noopener" href="<?php echo esc_url( $value ); ?>" title="<?php echo esc_attr( $social_title ); ?>" target="_blank">
-					<span class="<?php echo esc_attr( $social_name ); ?>-social icon icon-<?php echo esc_attr( $social_name ); ?>"></span>
+
+					<span class="<?php echo esc_attr( $social_name ); ?>-social icon icon-<?php echo esc_attr( $social_name ); ?>">
+						<i class="fab fab-<?php echo esc_attr( $social_name ); ?>"></i>
+					</span>
 					<span class="bg-transform">
 						<i class="icon icon-<?php echo esc_attr( $social_name ); ?>"></i>
 					</span>

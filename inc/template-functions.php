@@ -271,6 +271,7 @@ if ( ! function_exists( 'paddle_generate_social_urls' ) ) {
 			array( 'url' => 'vimeo.com', 'icon' => 'fab fa-vimeo-v', 'title' => esc_html__( 'Follow me on Vimeo', 'paddle' ), 'class' => 'vimeo' ),
 			array( 'url' => 'weibo.com', 'icon' => 'fab fa-weibo', 'title' => esc_html__( 'Follow me on weibo', 'paddle' ), 'class' => 'weibo' ),
 			array( 'url' => 'youtube.com', 'icon' => 'fab fa-youtube', 'title' => esc_html__( 'Subscribe to me on YouTube', 'paddle' ), 'class' => 'youtube' ),
+			array( 'url' => 'gruene.social', 'icon' => 'fab fa-mastodon', 'title' => esc_html__( 'Follow me on Mastodon', 'paddle' ), 'class' => 'mastodon' ),
 		);
 
 		return apply_filters( 'paddle_social_icons', $social_icons );

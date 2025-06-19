@@ -15,7 +15,7 @@
     "compile:rtl": "rtlcss css/theme.css css/theme-rtl.css",
     "lint:scss": "wp-scripts lint-style 'src/scss/**/*.scss'",
     "lint:js": "wp-scripts lint-js 'src/js/*.js'",
-    "bundle": "dir-archiver --src . --dest bundled/paddle.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist src bundled style.css.map",
+    "bundle": "cd ../ && dir-archiver --src paddle --dest paddle.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist src bundled style.css.map",
     "process:styles": "npm run compile:css && npm run css:minify"
   },
   "keywords": [

@@ -33,6 +33,10 @@ a:not([class*="wp-block-"]):not(.author-link):not(.post-entry-link) {
             a {
                 color: currentColor;  
                 transition: linear 0.1s;
+
+                &:hover {
+                    color: blue;
+                }
             }
         }
     }

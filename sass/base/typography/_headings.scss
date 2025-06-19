@@ -75,19 +75,8 @@ h2,.entry-content h2,
 .entry-summary h2,
 .comment-content h2,
 .textwidget h2, .page-content h2 {
-	line-height: 1.2173913043;
-	margin: 1.2173913043em 0;
-	@media screen and (min-width: 55em) {
-		margin: 1.2173913043em 0;
-	}
-	@media screen and (min-width: 68.75em) {
-		line-height: 1.2069;
-		margin: 1.931em 0;
-	}
-	@media screen and (min-width: 77.5em) {
-		line-height: 1.25;
-		margin: 1em 0;
-	}
+	line-height: 1.25;
+	margin: .75em 0;
 }
 
 h3, .entry-content h3,
@@ -95,13 +84,7 @@ h3, .entry-content h3,
 .comment-content h3,
 .textwidget h3 {
 	line-height: 1.1052631579;
-	margin: 1.95em 0;
-	@media screen and (min-width: 46.25em) {
-		margin: 1.95em 0;
-	}
-	@media screen and (min-width: 68.75em) {
-		margin: 1.95em 0;
-	}
+	margin: .75em 0;
 }
 .page-header {
 	.archive-description {

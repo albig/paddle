@@ -80,8 +80,12 @@ if ( ! function_exists( 'paddle_setup' ) ) :
 
 		// Register a new image size.
 		add_image_size( 'paddle-large-image', 1320, 990, true );
+		add_image_size( 'paddle-featured-image', 1410, 600, true );
+		add_image_size( 'paddle-with-sidebar-image', 1020, 600, true );
 		add_image_size( 'paddle-medium-image', 800, 600, true );
+		add_image_size( 'paddle-square-image', 600, 600, true );
 		add_image_size( 'paddle-small-thumb', 480, 360, true );
+		add_image_size( 'paddle-horizontal-image', 760, 400, true );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(

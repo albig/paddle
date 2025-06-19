@@ -175,7 +175,9 @@ if ( ! function_exists( 'paddle_post_thumbnail' ) ) :
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}
-		$featured_thumbnail = isset($size) && '' !== $size ? $size : 'paddle-small-thumb';
+		$featured_thumbnail = isset($size) && '' !== $size ? $size : PADDLE_DEFAULT_OPTION['paddle_thumbnail_size'];
+
+		if( is_archive() ) { $featured_thumbnail = 'paddle-small-thumb'; }
 
 		if ( is_singular() || is_front_page() ) :
 			?>
@@ -183,8 +185,8 @@ if ( ! function_exists( 'paddle_post_thumbnail' ) ) :
 			<div class="post-thumbnail">
 				<div class="thumbnail-container">
 			<?php if ( is_front_page() ) : ?>
-						<a class="post-thumbnail <?php echo esc_attr( 1 === get_theme_mod( 'paddle_expand_grid_image', 1 ) ? 'thumb-large' : 'thumb-small' ); ?>" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-				<?php the_post_thumbnail($featured_thumbnail); ?>
+						<a class="post-thumbnail <?php echo esc_attr( 1 === get_theme_mod( 'paddle_expand_grid_image', PADDLE_DEFAULT_OPTION['paddle_expand_grid_image'] ) ? 'paddle-large-image' : 'paddle-small-thumb' ); ?>" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+					<?php the_post_thumbnail($featured_thumbnail); ?>
 						</a>
 						<?php else : ?>
 							<?php the_post_thumbnail($featured_thumbnail); ?>
@@ -194,8 +196,9 @@ if ( ! function_exists( 'paddle_post_thumbnail' ) ) :
 
 		<?php else : ?>
 
-			<a class="post-thumbnail <?php echo esc_attr( 1 === get_theme_mod( 'paddle_expand_grid_image', 1 ) ? 'thumb-large' : 'thumb-small' ); ?>" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-			<div class="thumbnail-container">
+			<div class="thumbnail-container not-single">
+			<a class="post-thumbnail <?php echo esc_attr( 1 === get_theme_mod( 'paddle_expand_grid_image', PADDLE_DEFAULT_OPTION['paddle_expand_grid_image'] ) ? 'paddle-large-image' : 'paddle-small-thumb' ); ?>" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+
 			<?php
 			the_post_thumbnail(
 				$featured_thumbnail,
@@ -207,6 +210,7 @@ if ( ! function_exists( 'paddle_post_thumbnail' ) ) :
 					),
 				)
 			);
+
 			?>
 			</div><!-- .thumbnail-container -->
 			</a>
