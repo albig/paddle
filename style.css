@@ -87,6 +87,14 @@ Source: https://github.com/kusimo/paddle/blob/ed71f0ed6a1b91e9afb620739e743222e3
   font-weight: 700;
   src: url("assets/fonts/inter-v19-latin_latin-ext-700.woff2") format("woff2");
 }
+/* inter-700italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  src: url("assets/fonts/inter-v19-latin_latin-ext-700italic.woff2") format("woff2");
+}
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -487,11 +495,6 @@ blockquote em,
 blockquote i,
 blockquote cite {
   font-style: normal;
-}
-
-blockquote strong,
-blockquote b {
-  font-weight: 400;
 }
 
 address {
