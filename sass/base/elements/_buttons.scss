@@ -21,7 +21,6 @@ input[type='submit']:not(.btn) {
   &:active,
   &:focus {
     border-color: $color__border-button-focus;
-    //outline: none;
   }
 }
 

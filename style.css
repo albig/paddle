@@ -4532,6 +4532,22 @@ To do before Resubmission!!! Remove the duplicate CSS below!!!
   border: none;
 }
 
+.map button:not(.btn),
+.map button:not(.btn-close),
+.map input[type=button]:not(.btn),
+.map input[type=reset]:not(.btn),
+.map input[type=submit]:not(.btn) {
+  padding: 0;
+}
+.map button:not(.btn):hover,
+.map button:not(.btn-close):hover,
+.map input[type=button]:not(.btn):hover,
+.map input[type=reset]:not(.btn):hover,
+.map input[type=submit]:not(.btn):hover {
+  color: #fff;
+  border: 2px solid white;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/

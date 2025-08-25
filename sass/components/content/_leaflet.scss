@@ -1,0 +1,13 @@
+.map button:not(.btn),
+.map button:not(.btn-close),
+.map input[type='button']:not(.btn),
+.map input[type='reset']:not(.btn),
+.map input[type='submit']:not(.btn) {
+  padding: 0;
+
+  &:hover {
+    color: #fff;
+
+    border: 2px solid white;
+  }
+}
